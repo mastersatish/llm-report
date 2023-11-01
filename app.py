@@ -326,7 +326,7 @@ pgvector_pct = round((pgvector_app_number/total_app_number)*100,1)
 vector_opensource_pct = round(( (chromadb_app_number + weaviate_app_number + faiss_app_number + pgvector_app_number + qdrant_client_app_number) /total_app_number)*100,1)
 
 
-st.write(f'As of :orange[**{st.session_state["most_recent_week_start"].strftime("%B %d, %Y")}**], an analysis of :orange[**{total_app_number:,}**] LLM-powered Streamlit apps revealed the following insights:')
+st.write(f'As of :orange[**{most_recent_week_start.strftime("%B %d, %Y")}**], an analysis of :orange[**{total_app_number:,}**] LLM-powered Streamlit apps revealed the following insights:')
 
 df_tools_usage = df_tools_usage(df_daily)
 pct_llm_models, pct_vector_retrieval, pct_llm_orchestration = calculate_tools_usage(df_tools_usage)
