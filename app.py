@@ -51,7 +51,7 @@ with st.sidebar:
     
     add_vertical_space(1)
     
-    if st.session_state['most_recent_week_start'] != '':
+    if st.session_state['most_recent_week_start'] is not None:
         st.caption(f'Last updated {st.session_state["most_recent_week_start"]}')
 
 
