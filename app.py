@@ -1420,7 +1420,7 @@ with st.expander('Expand to see instructions'):
     st.markdown('''
         #### How to use the search
         - **Step 1.** Select LLM libraries of interest in the `Select LLM library` multi-select widget.
-        - **Step 2.** Select input widgets of interest in the `Select input widget` multi-select widget.
+        - **Step 2.** Select input widgets of interest in the `Select app type` multi-select widget.
         - **Step 3.** Query results should appear after a short page refresh.
     ''')
     add_vertical_space(2)
