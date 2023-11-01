@@ -84,14 +84,14 @@ def load_data(persist="disk"):
     return df, most_recent_start_week
 
 df = load_data()[0]
-st.session_state['most_recent_week_start'] = load_data()[1]
+# st.session_state['most_recent_week_start'] = load_data()[1]
 df = df[df['WEEK_START'] < st.session_state['most_recent_week_start']]
 
 total_developer_number = df.OWNER.nunique()
 total_app_number = df.SUBDOMAIN.nunique()
 
 with st.sidebar:
-    st.caption(f'Last updated {st.session_state["most_recent_week_start"].strftime("%B %d, %Y")}')
+    st.caption(f'Last updated {load_data()[1].strftime("%B %d, %Y")}')
 
 ############################################################
 # Main page
