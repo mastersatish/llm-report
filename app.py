@@ -23,8 +23,8 @@ alt.themes.enable("dark")
 # Navigation
 
 
-if 'most_recent_week_start' not in st.session_state:
-    st.session_state['most_recent_week_start'] = ''
+#if 'most_recent_week_start' not in st.session_state:
+#    st.session_state['most_recent_week_start'] = ''
 
 with st.sidebar:
     st.title(':gray[State of LLM Apps 2023]')
@@ -85,13 +85,14 @@ def load_data(persist="disk"):
 
 df = load_data()[0]
 # st.session_state['most_recent_week_start'] = load_data()[1]
-df = df[df['WEEK_START'] < st.session_state['most_recent_week_start']]
+most_recent_week_start = load_data()[1]
+df = df[df['WEEK_START'] < most_recent_week_start]
 
 total_developer_number = df.OWNER.nunique()
 total_app_number = df.SUBDOMAIN.nunique()
 
 with st.sidebar:
-    st.caption(f'Last updated {load_data()[1].strftime("%B %d, %Y")}')
+    st.caption(f'Last updated {most_recent_week_start.strftime("%B %d, %Y")}')
 
 ############################################################
 # Main page
