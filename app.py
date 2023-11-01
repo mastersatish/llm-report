@@ -51,8 +51,8 @@ with st.sidebar:
     
     add_vertical_space(1)
     
-    if st.session_state['most_recent_week_start']:
-        st.caption(f'Last updated {st.session_state["most_recent_week_start"].strftime("%B %d, %Y")}')
+#    if st.session_state['most_recent_week_start']:
+#        st.caption(f'Last updated {st.session_state["most_recent_week_start"].strftime("%B %d, %Y")}')
 
 
 ############################################################
@@ -87,10 +87,11 @@ df = load_data()[0]
 st.session_state['most_recent_week_start'] = load_data()[1]
 df = df[df['WEEK_START'] < st.session_state['most_recent_week_start']]
 
-
 total_developer_number = df.OWNER.nunique()
 total_app_number = df.SUBDOMAIN.nunique()
 
+with st.sidebar:
+    st.caption(f'Last updated {st.session_state["most_recent_week_start"].strftime("%B %d, %Y")}')
 
 ############################################################
 # Main page
