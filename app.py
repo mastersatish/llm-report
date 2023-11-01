@@ -976,9 +976,6 @@ st.markdown("""
 
 st.markdown("<div id='sixth'></div>", unsafe_allow_html=True)
 
-# Vector databases
-st.markdown("<div id='tenth'></div>", unsafe_allow_html=True)
-
 colored_header(
     label="Top vector retrieval tools",
     description="",
