@@ -1,0 +1,11 @@
+streamlit
+altair==4.2.2
+vl-convert-python
+altair_saver
+streamlit-extras
+pandas
+google-auth
+gsheetsdb
+entrypoints
+selenium==4.11.2
+webdriver-manager

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 804 862" width="804" height="862">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #71d3dc;
+        opacity: 0.215;
+      }
+    </style>
+  </defs>
+  <g id="Light-Blue-Arrow" transform="translate(0 0)">
+    <path id="Fill_1_Copy_2" data-name="Fill 1 Copy 2" class="cls-1" d="M-729.387,590.358l282.649-159.181L-729.387,271.453c-71.436-40.241-95.8-129.1-54.53-198.647C-742.721,3.179-651.6-20.624-580.482,19.462L-74.317,304.794A146.716,146.716,0,0,1-5.263,392.1,135.959,135.959,0,0,1-.1,426.525,136.966,136.966,0,0,1-6.771,473.9C-17.089,507.7-40.584,537.789-74.317,556.94L-580.482,842.427c-71.119,40.241-162.239,16.438-203.434-53.112-41.274-69.782-16.907-158.561,54.53-198.957" transform="translate(804)"/>
+  </g>
+</svg>
