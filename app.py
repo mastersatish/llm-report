@@ -52,7 +52,7 @@ with st.sidebar:
     add_vertical_space(1)
     
     if st.session_state['most_recent_week_start'] != '':
-        st.caption(f'Last updated {st.session_state["most_recent_week_start"].strftime("%B %d, %Y")}')
+        st.caption(f'Last updated {st.session_state["most_recent_week_start"]}')
 
 
 ############################################################
