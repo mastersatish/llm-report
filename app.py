@@ -22,6 +22,10 @@ alt.themes.enable("dark")
 ############################################################
 # Navigation
 
+
+if 'most_recent_week_start' not in st.session_state:
+    st.session_state['most_recent_week_start'] = ''
+
 with st.sidebar:
     st.title(':gray[State of LLM Apps 2023]')
     st.write(':gray[Explore the latest trends, tools, and use cases in LLM app development from apps hosted on Streamlit Community Cloud.]')
@@ -80,11 +84,6 @@ def load_data(persist="disk"):
     return df, most_recent_start_week
 
 df = load_data()[0]
-
-
-if 'most_recent_week_start' not in st.session_state:
-    st.session_state['most_recent_week_start'] = ''
-
 st.session_state['most_recent_week_start'] = load_data()[1]
 df = df[df['WEEK_START'] < st.session_state['most_recent_week_start']]
 
