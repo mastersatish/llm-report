@@ -1,6 +1,6 @@
-# ☁️ State of LLM Apps Report
+# 🎈 State of LLM Apps 2023
 
-In this inaugural report conducted by Streamlit/ Snowflake, we analyzed 12,000 LLM apps from 8,000 developers.
+Explore the latest trends, tools, and use cases in LLM app development from apps hosted on Streamlit Community Cloud.
 
 ## Demo App
 
