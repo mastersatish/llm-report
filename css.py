@@ -8,12 +8,12 @@ def load_css_styles():
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700bold);
 
     /* Sidebar top margin */
-    .st-emotion-cache-ysnqb2.ea3mdgi4 {
+    /* .st-emotion-cache-ysnqb2.ea3mdgi4 {
       margin-top: -30px;
       margin-bottom: -30px;
       /* margin-top: -75px;
-      margin-bottom: -90px; */
-    }
+      margin-bottom: -90px; 
+    } */
 
     /* Front page text */
     div.frontpage {
@@ -24,7 +24,7 @@ def load_css_styles():
 
     /* Sidebar padding 
     .st-emotion-cache-10oheav {
-        padding: 1rem 1rem;
+        padding: 3rem 1rem;
     } 
     */
 
