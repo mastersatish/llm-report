@@ -1334,6 +1334,12 @@ description="",
 color_name="light-blue-70",
 )
 
+def calculate_chat_most_recent_week_pct(input_df):
+    chat_most_recent_week = input_df['WEEK_START'].max()
+    most_recent_df = input_df[input_df.WEEK_START == chat_most_recent_week]
+    return most_recent_df.iloc[0]['WEEKLY_APP_PCT']
+recent_chat_apps_pct = calculate_chat_most_recent_week_pct(df_weekly_chat_app)
+
 usage_col = st.columns((2,1), gap="large")
 
 with usage_col[0]:
@@ -1387,7 +1393,7 @@ with usage_col[1]:
     st.markdown(f"""
         ### :orange[**{st_chat_input_and_chat_message_pct}**%] of total apps (and growing weekly) are chatbots
 
-        Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. Chatbots are also on the rise as indicated by their weekly growth to :orange[**X%**].
+        Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. Chatbots are also on the rise as indicated by their weekly growth to :orange[**{recent_chat_apps_pct}%**].
 
         Conversely, :orange[**{100-st_chat_input_and_chat_message_pct}**%] of total apps use text inputs with a single objective, generally not allowing for conversational refinement.
 
