@@ -1058,7 +1058,7 @@ with vector_tab1:
             
             Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing large, unstructured datasets (including text, images, video, or audio). These tools are commonly used in search or recommendation engines.
 
-            Apps using LLMs and orchestration tools alone meet 80% apps' needs.
+            Apps using LLMs and orchestration tools alone meet :orange[**80%**] apps' needs.
             - **Vector databases** (_e.g._ Pinecone or Chroma) use indexing and other techniques to speed up the retrieval process.
             - **Vector search** tools (_e.g._ FAISS or Elasticsearch) transform unstructured datasets into numerical representations so the algorithm can retrieve contextual, similar data.
             ''')
