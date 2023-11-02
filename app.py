@@ -406,7 +406,7 @@ with takeaway_col[2]:
           </b>
         </h4>
 
-        Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing large, unstructured datasets (including text, images, video, or audio). 80% of apps rely on the LLM's built-in knowledge, suggesting this may suffice for the majority of use cases.
+        Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing large, unstructured datasets (including text, images, video, or audio). :orange[**80%**] of apps rely on the LLM's built-in knowledge, suggesting this may suffice for the majority of use cases.
     """, unsafe_allow_html=True)
     
 
