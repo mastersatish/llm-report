@@ -1825,19 +1825,17 @@ colored_header(
 # 1 container
 st.caption('''
 ### Usage data from Streamlit Community Cloud
-All data was collected in accordance with Streamlit’s [Community Cloud Terms of Use](https://streamlit.io/deployment-terms-of-use) and [Privacy Notice](https://streamlit.io/privacy-policy#3.-how-do-we-use-your-information?). 
+All data was collected in accordance with our [Community Cloud Terms of Use](https://streamlit.io/deployment-terms-of-use) and [Privacy Notice](https://streamlit.io/privacy-policy#3.-how-do-we-use-your-information?). 
 
 The Streamlit software (the Python library) is open-sourced under the Apache 2.0 license, but Streamlit Community Cloud (the free hosting and deployment service) is proprietary to Snowflake Inc.  
 
-Streamlit aims to make it fast, easy, and delightful to create and share apps. To do so, Streamlit has open-source software you can download to build your apps; a sharing platform you can use to deploy, manage, and share your apps; and various services, like our discussion forum, where you can get more information on how to better use Streamlit. By default, each product or service collects some data so that we can understand how Streamlit products are used and use that information to improve Streamlit.
-
 ### Aggregated data only
-Streamlit does not provide direct query access to our database or any raw data. This approach ensures that no individual-level data can be extracted from the dataset, further reducing the risk of privacy violations. 
+This Streamlit app does not provide direct query access to raw data, and ensures that no individual-level data can be extracted from the dataset. 
 
-Streamlit may use personal information and other information about you to create de-identified and/or aggregated information. De-identified and/or aggregated information is not personal information, and we may use and disclose such information in a number of ways, including research, internal analysis, analytics, and any other legally permissible purposes.
+Streamlit may use personal information and other information to create de-identified and/or aggregated information. 
 
 ### No PII included
-This dataset contains no personally identifiable information (PII). This includes but is not limited to names, addresses, phone numbers, email addresses, or any other sensitive personal information.
+The dataset associated with this Streamlit app contains no personally identifiable information (PII). This includes but is not limited to names, addresses, phone numbers, email addresses, or any other sensitive personal information.
 
 ### Data Analysis and Visualization
 Data wrangling is performed using `pandas`, visualized using `altair` and interactive widgets are provided herein to allow users to retrieve data subsets or views of interest. App screenshots used in the gallery section are dynamically retrieved via `selenium` and `chromium`.
