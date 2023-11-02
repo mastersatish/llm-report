@@ -10,6 +10,7 @@ def load_css_styles():
     /* Sidebar top margin */
     .st-emotion-cache-ysnqb2.ea3mdgi4 {
       margin-top: -30px;
+      margin-bottom: -30px;
       /* margin-top: -75px;
       margin-bottom: -90px; */
     }
