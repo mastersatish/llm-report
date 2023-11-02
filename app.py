@@ -1390,7 +1390,7 @@ with usage_col[1]:
 
         Conversely, :orange[**{100-st_chat_input_and_chat_message_pct}**%] of LLM apps use text inputs with a single objective, generally not allowing for conversational refinement.
 
-        Explore the gallery below to see examples of apps using these different mode of accepting text input (_e.g._ single text input or chat input).
+        Explore the [gallery](#gallery-of-llm-apps) below to see examples of apps using these different mode of accepting text input (_e.g._ single text input or chat input).
     """)
 
 add_vertical_space(2)
