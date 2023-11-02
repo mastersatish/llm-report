@@ -8,7 +8,7 @@ def load_css_styles():
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700bold);
 
     /* Sidebar top margin */
-    /* .st-emotion-cache-ysnqb2.ea3mdgi4 {
+    .st-emotion-cache-ysnqb2.ea3mdgi4 {
       margin-top: -30px;
       margin-bottom: -30px;
       /* margin-top: -75px;
