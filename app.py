@@ -1389,10 +1389,11 @@ with usage_col[1]:
         Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. 
 
         Conversely, :orange[**{100-st_chat_input_and_chat_message_pct}**%] of LLM apps use text inputs with a single objective, generally not allowing for conversational refinement.
+
+        Explore the gallery below to see examples of apps using these different mode of accepting text input (_e.g._ single text input or chat input).
     """)
 
 add_vertical_space(2)
-st.write('Explore the gallery below to see examples of apps using these different mode of accepting text input (_e.g._ single text input or chat input).')
    
 
 st.markdown("""
