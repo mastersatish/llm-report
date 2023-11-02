@@ -9,8 +9,9 @@ def load_css_styles():
 
     /* Sidebar top margin */
     .st-emotion-cache-ysnqb2.ea3mdgi4 {
-      margin-top: -75px;
-      margin-bottom: -90px;
+      margin-top: 0px;
+      /* margin-top: -75px;
+      margin-bottom: -90px; */
     }
 
     /* Front page text */
