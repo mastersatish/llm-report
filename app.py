@@ -1385,17 +1385,18 @@ with usage_col[0]:
 
 with usage_col[1]:
     st.markdown(f"""
-        ### :orange[**{st_chat_input_and_chat_message_pct}**%] of total apps  (and growing weekly) are chatbots
+        ### :orange[**{st_chat_input_and_chat_message_pct}**%] of total apps (and growing weekly) are chatbots
 
-        Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. 
+        Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. Chatbots are also on the rise as indicated by their weekly growth to :orange[**X%**].
 
-        Conversely, :orange[**{100-st_chat_input_and_chat_message_pct}**%] of LLM apps use text inputs with a single objective, generally not allowing for conversational refinement.
+        Conversely, :orange[**{100-st_chat_input_and_chat_message_pct}**%] of total apps use text inputs with a single objective, generally not allowing for conversational refinement.
 
         Explore the [gallery](#gallery-of-llm-apps) below to see examples of apps using these different mode of accepting text input (_e.g._ single text input or chat input).
     """)
 
 add_vertical_space(2)
-   
+
+st.write(df_weekly_chat_app)
 
 st.markdown("""
 <div class="container">
