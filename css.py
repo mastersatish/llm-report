@@ -12,8 +12,8 @@ def load_css_styles():
       margin-top: -30px;
       margin-bottom: -30px;
       /* margin-top: -75px;
-      margin-bottom: -90px; 
-    } */
+      margin-bottom: -90px; */
+    } 
 
     /* Front page text */
     div.frontpage {
