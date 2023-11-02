@@ -28,7 +28,8 @@ alt.themes.enable("dark")
 
 with st.sidebar:
     st.title(':gray[State of LLM Apps 2023]')
-    st.write(':gray[Explore the latest trends, tools, and use cases in LLM app development from apps hosted on Streamlit Community Cloud.]')
+    with st.expander('About this app:'):
+        st.write(':gray[Explore the latest trends, tools, and use cases in LLM app development from apps hosted on Streamlit Community Cloud.]')
     
     #<h3>What's in the report?</h3>
     st.header("What's in the report?")
