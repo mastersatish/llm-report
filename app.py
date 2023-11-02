@@ -332,7 +332,7 @@ df_tools_usage = df_tools_usage(df_daily)
 pct_llm_models, pct_vector_retrieval, pct_llm_orchestration = calculate_tools_usage(df_tools_usage)
 pct_use_1, pct_use_2, pct_use_3 = calculate_use_sum(df_tools_usage)
 
-takeaway_col = st.columns(4, gap="large")
+takeaway_col = st.columns(4, gap="medium")
 
 # Apps using 1 LLM category accounted for more than half of apps at :orange[**{pct_use_1}%**]
 # while those using 2 and 3 LLM categories afforded percentage values of :orange[**{pct_use_2}%**] and :orange[**{pct_use_3}%**], respectively.
