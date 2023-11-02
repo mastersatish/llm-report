@@ -1396,7 +1396,6 @@ with usage_col[1]:
 
 add_vertical_space(2)
 
-st.write(df_weekly_chat_app.groupby('WEEK_START')['WEEK_START'].max())
 
 st.markdown("""
 <div class="container">
