@@ -1385,7 +1385,7 @@ with usage_col[0]:
 
 with usage_col[1]:
     st.markdown(f"""
-        ### :orange[**{st_chat_input_and_chat_message_pct}**%] (and growing) are chatbots
+        ### :orange[**{st_chat_input_and_chat_message_pct}**%] of total apps  (and growing weekly) are chatbots
 
         Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. 
 
