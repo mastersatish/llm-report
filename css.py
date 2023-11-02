@@ -24,7 +24,7 @@ def load_css_styles():
 
     /* Sidebar padding 
     .st-emotion-cache-10oheav {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     } 
     */
 
