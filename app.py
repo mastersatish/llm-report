@@ -863,7 +863,7 @@ with tab2:
 
     with line2:
         st.markdown(f'''
-            ### :orange[**{openai_pct + cohere_pct + anthropic_pct}%**] use proprietary LLMs
+            ### :orange[**{int(openai_pct + cohere_pct + anthropic_pct)}%**] use proprietary LLMs
             - **Proprietary LLMs** are developed and owned by an organization (_e.g._ OpenAI, Anthropic, Cohere), where source code, training data, weights, or other model details are not usually publicly disclosed.
             - **Open Source LLMs** require self-hosting or inferencing through a hosting provider (_e.g._ Llama models via HuggingFace), where source code, training data, weights, and other model details are more readily available.
             ''')
