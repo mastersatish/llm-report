@@ -409,7 +409,7 @@ with takeaway_col[2]:
           </b>
         </h4>
 
-        Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing **large, unstructured datasets** (including text, images, video, or audio). :orange[**80%**] of apps rely on the LLM's built-in knowledge, suggesting this may suffice for the majority of use cases.
+        Apps using vector databases and vector search categorize large, unstructured datasets (including text, images, video, or audio). Although this feature isn't widespread yet, it's incredibly powerful for search functions and making stronger contextual and faster recommendations.
     """, unsafe_allow_html=True)
     redirect_button('#top-vector-retrieval-tools', 'Top vector retrieval tools') 
     
