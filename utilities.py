@@ -881,7 +881,7 @@ def calculate_weekly_app_count(input_df):
 # calculate_weekly_app_count(df_llm)
 
 
-def redirect_button(text: str= None, url: str):
+def redirect_button(text, url):
     st.markdown(
     f'''
     <a href="{url}" target="_self">
