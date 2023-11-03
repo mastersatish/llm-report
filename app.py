@@ -359,7 +359,8 @@ with takeaway_col[0]:
 
         OpenAI has become the standard for LLM apps due to its pioneering GPT research, high-quality outputs, steerability, and accessible API. Their first-mover debut of ChatGPT and large transformer-based models sparked the imagination of developers, and the world, at large.
     """, unsafe_allow_html=True)
-   #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
+    #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
+    st.link_button('Go to Top models', '#top-models', type='primary')
 
 with takeaway_col[1]:
 # langchain_app_number, langchain_pct
