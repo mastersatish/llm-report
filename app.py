@@ -11,7 +11,7 @@ import altair as alt
 from PIL import Image
 from google.oauth2 import service_account
 from gsheetsdb import connect
-from utilities import usage_in_app, usage_number_in_app, df_usage_in_app, get_top_apps, weekly_growth_plot, get_driver, get_screenshot, add_corners, generate_app_image, show_apps, make_donut, make_donut_chart, df_tools_usage, calculate_tools_usage, calculate_use_sum, get_weekly_cumulative_app_count, get_weekly_cumulative_developer_count, add_cumulative_column, prepare_data_for_trends_plot, add_cumulative_column_proprietary_opensource, add_cumulative_column_usage_trends, prepare_gallery_data, load_weekly_chat_app, sort_LLM_tools, calculate_weekly_app_count, prepare_llm_data, sort_opensource_tools
+from utilities import usage_in_app, usage_number_in_app, df_usage_in_app, get_top_apps, weekly_growth_plot, get_driver, get_screenshot, add_corners, generate_app_image, show_apps, make_donut, make_donut_chart, df_tools_usage, calculate_tools_usage, calculate_use_sum, get_weekly_cumulative_app_count, get_weekly_cumulative_developer_count, add_cumulative_column, prepare_data_for_trends_plot, add_cumulative_column_proprietary_opensource, add_cumulative_column_usage_trends, prepare_gallery_data, load_weekly_chat_app, sort_LLM_tools, calculate_weekly_app_count, prepare_llm_data, sort_opensource_tools, redirect_button
 
 # Configuration
 st.set_page_config(layout="wide", page_title="State of LLM Apps 2023", page_icon="🎈",)
@@ -337,24 +337,6 @@ takeaway_col = st.columns(4, gap="medium")
 # Apps using 1 LLM category accounted for more than half of apps at :orange[**{pct_use_1}%**]
 # while those using 2 and 3 LLM categories afforded percentage values of :orange[**{pct_use_2}%**] and :orange[**{pct_use_3}%**], respectively.
 
-def redirect_button(url: str, text: str= None, color="#F63366"):
-    st.markdown(
-    f'''
-    <a href="{url}" target="_self">
-        <div style="
-            text-align: center;
-            display: inline-block;
-            padding: 0.5em 1em;
-            color: #FFFFFF;
-            background-color: {color};
-            border-radius: 6px;
-            text-decoration: none;">
-            {text}
-        </div>
-    </a>
-    ''',
-    unsafe_allow_html=True)
-
 with takeaway_col[0]:
     st.markdown(f"""
         <h3>
@@ -377,11 +359,10 @@ with takeaway_col[0]:
         OpenAI has become the standard for LLM apps due to its pioneering GPT research, high-quality outputs, steerability, and accessible API. Their first-mover debut of ChatGPT and large transformer-based models sparked the imagination of developers, and the world, at large.
     """, unsafe_allow_html=True)
 
-    redirect_button("#top-models", "Go to Top models")
-    st.button('Go to Top models', type='primary')
+    redirect_button('Go to Top models', '#top-models')
+    
     #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
-    #if st.button('Go to Top models', type='primary'):
-    #    <a href="#top-models" target="_self">📊 &nbsp; Top models</a>
+
     
 
 with takeaway_col[1]:
@@ -406,8 +387,8 @@ with takeaway_col[1]:
 
         LangChain and LlamaIndex are orchestration frameworks with agents and tools designed to augment LLM capabilities. Agents can be combined to manage and optimize LLM functions, such as refining AI reasoning, addressing biases, and integrating external data sources.
     """, unsafe_allow_html=True)
-    
-   #st.altair_chart(make_donut(pct_llm_orchestration, 'LLM Orchestration', 'green'), use_container_width=True)
+    #redirect_button('Go to Top models', '#top-models')    
+    #st.altair_chart(make_donut(pct_llm_orchestration, 'LLM Orchestration', 'green'), use_container_width=True)
 
     
 with takeaway_col[2]:
