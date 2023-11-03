@@ -1056,7 +1056,7 @@ with vector_tab1:
 
     with line2:
         st.markdown(f'''
-            ### :orange[**{pct_vector_retrieval}%**] use vector retrieval
+            ### :orange[**{pct_vector_retrieval}%**] of all apps use vector magic
             
             Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing large, unstructured datasets (including text, images, video, or audio). These tools are commonly used in search or recommendation engines.
 
