@@ -1657,7 +1657,7 @@ st.write('***What is your biggest concern when building LLM apps?*** In June 202
 # https://www.youtube.com/post/UgkxDfU29sWpCVF3RpPgV9XejmK2hFU5ZCTK
 # https://www.linkedin.com/posts/streamlit_activity-7092582839195500546-S1nw
 
-st.write(df_survey['Trust'])
+st.write(df_survey['Trust'][0])
 
 concerns_col = st.columns(4, gap="medium")
 with concerns_col[0]:
