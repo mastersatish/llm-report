@@ -1657,7 +1657,7 @@ st.write('***What is your biggest concern when building LLM apps?*** In June 202
 # https://www.youtube.com/post/UgkxDfU29sWpCVF3RpPgV9XejmK2hFU5ZCTK
 # https://www.linkedin.com/posts/streamlit_activity-7092582839195500546-S1nw
 
-st.write(df_survey['Trust'][0])
+
 
 concerns_col = st.columns(4, gap="medium")
 with concerns_col[0]:
@@ -1672,7 +1672,7 @@ with concerns_col[0]:
    @st.cache_data
    def display_trust_chart(input_value):
        st.altair_chart(make_donut(input_value, 'Trust', 'blue'), use_container_width=True)
-   display_trust_chart(df_survey['Trust'])
+   display_trust_chart(int(df_survey['Trust'][0]))
    #st.altair_chart(make_donut_chart(36, 'Trust', 'blue'), use_container_width=True)
 
 with concerns_col[1]:
@@ -1687,7 +1687,7 @@ with concerns_col[1]:
    @st.cache_data
    def display_privacy_chart(input_value):
        st.altair_chart(make_donut(input_value, 'Privacy', 'green'), use_container_width=True)
-   display_privacy_chart(df_survey['Privacy'])
+   display_privacy_chart(int(df_survey['Privacy'][0]))
    #st.altair_chart(make_donut_chart(28, 'Privacy', 'green'), use_container_width=True)
     
 with concerns_col[2]:
@@ -1702,7 +1702,7 @@ with concerns_col[2]:
    @st.cache_data
    def display_cost_chart(input_value):
        st.altair_chart(make_donut(input_value, 'Cost', 'orange'), use_container_width=True)
-   display_cost_chart(df_survey['Cost'])
+   display_cost_chart(int(df_survey['Cost'][0]))
    #st.altair_chart(make_donut_chart(19, 'Cost', 'orange'), use_container_width=True)
    
 with concerns_col[3]:
@@ -1717,7 +1717,7 @@ with concerns_col[3]:
    @st.cache_data
    def display_skills_chart(input_value):
        st.altair_chart(make_donut(input_value, 'Skills', 'red'), use_container_width=True)
-   display_skills_chart(df_survey['Skills'])
+   display_skills_chart(int(df_survey['Skills'][0]))
    #st.altair_chart(make_donut_chart(17, 'Skills', 'red'), use_container_width=True)
    
 
