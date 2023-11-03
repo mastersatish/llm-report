@@ -63,6 +63,7 @@ def df_usage_in_app(input_df):
       'langchain': 'LangChain',
       'llama_index': 'Llama Index'
       }
+    
   for tool in llm_models:
     pct_usage = usage_in_app(input_df, tool)
     pct_dict = f'{{"TOOL": ["{tool}"], "PCT_USAGE": [{pct_usage}], "LLM_CATEGORY": ["LLM models"]}}' # llm_models
