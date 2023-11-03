@@ -346,8 +346,7 @@ def redirect_button(url: str, text: str= None, color="#F63366"):
             padding: 0.5em 1em;
             color: #FFFFFF;
             background-color: {color};
-            border-radius: 5px;
-            align-items: center;
+            border-radius: 6px;
             text-decoration: none;">
             {text}
         </div>
