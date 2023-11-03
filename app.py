@@ -337,11 +337,6 @@ takeaway_col = st.columns(4, gap="medium")
 # Apps using 1 LLM category accounted for more than half of apps at :orange[**{pct_use_1}%**]
 # while those using 2 and 3 LLM categories afforded percentage values of :orange[**{pct_use_2}%**] and :orange[**{pct_use_3}%**], respectively.
 
-def nav_to(url):
-    nav_script = """
-        <meta http-equiv="refresh" content="0; url='%s'">
-    """ % (url)
-    st.write(nav_script, unsafe_allow_html=True)
 
 with takeaway_col[0]:
     st.markdown(f"""
@@ -365,7 +360,6 @@ with takeaway_col[0]:
         OpenAI has become the standard for LLM apps due to its pioneering GPT research, high-quality outputs, steerability, and accessible API. Their first-mover debut of ChatGPT and large transformer-based models sparked the imagination of developers, and the world, at large.
     """, unsafe_allow_html=True)
    #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
-    st.button('See Top Models', on_click=nav_to('#top-models'))
 
 with takeaway_col[1]:
 # langchain_app_number, langchain_pct
