@@ -387,7 +387,7 @@ with takeaway_col[1]:
 
         LangChain and LlamaIndex are orchestration frameworks with agents and tools designed to augment LLM capabilities. Agents can be combined to manage and optimize LLM functions, such as refining AI reasoning, addressing biases, and integrating external data sources.
     """, unsafe_allow_html=True)
-    #redirect_button('Go to Top models', '#top-models')    
+    redirect_button('#top-orchestration-tools', 'Go to Top orchestration tools') 
     #st.altair_chart(make_donut(pct_llm_orchestration, 'LLM Orchestration', 'green'), use_container_width=True)
 
     
@@ -411,6 +411,7 @@ with takeaway_col[2]:
 
         Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing **large, unstructured datasets** (including text, images, video, or audio). :orange[**80%**] of apps rely on the LLM's built-in knowledge, suggesting this may suffice for the majority of use cases.
     """, unsafe_allow_html=True)
+    redirect_button('#top-vector-retrieval-tools', 'Go to Top vector retrieval tools') 
     
 
    #st.altair_chart(make_donut(pct_vector_retrieval, 'Vector Retrieval', 'orange'), use_container_width=True)
@@ -439,7 +440,7 @@ with takeaway_col[3]:
 
         Chatbots let users iteratively refine answers, leaving room for fluid, human-like conversations with the LLM. Conversely, :orange[**{100-st_chat_input_and_chat_message_pct}**%] of LLM apps use text inputs with a single objective, generally not allowing for conversational refinement.
     """, unsafe_allow_html=True)
-    
+    redirect_button('#are-chatbots-the-future', 'Go to Are chatbots the future?') 
 
 add_vertical_space(2)
  
