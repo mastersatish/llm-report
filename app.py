@@ -391,8 +391,8 @@ with takeaway_col[1]:
 with takeaway_col[2]:
     st.markdown(f"""
         <h3>
-          <b> Vectors are
-            <span style="color:#FFBD45">niche</span>; not necessary
+          <b> Most apps
+            <span style="color:#FFBD45">bypass</span> vector magic
           </b>
         </h3>
         
