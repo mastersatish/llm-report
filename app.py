@@ -3,7 +3,6 @@ from datetime import datetime
 from css import load_css_styles, load_footer
 from streamlit_extras.add_vertical_space import add_vertical_space
 from streamlit_extras.colored_header import colored_header
-from streamlit_extras.switch_page_button import switch_page 
 from streamlit_extras.card import card
 import math
 import numpy as np
@@ -338,6 +337,22 @@ takeaway_col = st.columns(4, gap="medium")
 # Apps using 1 LLM category accounted for more than half of apps at :orange[**{pct_use_1}%**]
 # while those using 2 and 3 LLM categories afforded percentage values of :orange[**{pct_use_2}%**] and :orange[**{pct_use_3}%**], respectively.
 
+def redirect_button(url: str, text: str= None, color="#FD504D"):
+    st.markdown(
+    f'''
+    <a href="{url}" target="_self">
+        <div style="
+            display: inline-block;
+            padding: 0.5em 1em;
+            color: #FFFFFF;
+            background-color: {color};
+            border-radius: 3px;
+            text-decoration: none;">
+            {text}
+        </div>
+    </a>
+    ''',
+    unsafe_allow_html=True)
 
 with takeaway_col[0]:
     st.markdown(f"""
@@ -360,9 +375,11 @@ with takeaway_col[0]:
 
         OpenAI has become the standard for LLM apps due to its pioneering GPT research, high-quality outputs, steerability, and accessible API. Their first-mover debut of ChatGPT and large transformer-based models sparked the imagination of developers, and the world, at large.
     """, unsafe_allow_html=True)
+
+    redirect_button("#top-models", "Go to Top models")
     #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
-    if st.button('Go to Top models', type='primary'):
-        switch_page('top-models')
+    #if st.button('Go to Top models', type='primary'):
+    #    <a href="#top-models" target="_self">📊 &nbsp; Top models</a>
     
 
 with takeaway_col[1]:
