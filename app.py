@@ -578,7 +578,8 @@ with llm_tab[0]:
         )
         
     with line2:
-        st.subheader(f':orange[**{openai_pct}%**] use OpenAI')
+        # st.subheader(f':orange[**{openai_pct}%**] use OpenAI')
+        st.subheader('Out of all LLM tech, OpenAI (GPT) is the [**most%**] used')
         st.write('''
         Generally speaking, there are 4 categories of an [LLM app’s architecture](#llm-app-architecture):
         - LLM model
