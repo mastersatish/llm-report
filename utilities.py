@@ -881,21 +881,22 @@ def calculate_weekly_app_count(input_df):
 # calculate_weekly_app_count(df_llm)
 
 
-def redirect_button(text, url):
+
+def redirect_button(url: str, text: str= None, color="#F63366"):
     st.markdown(
     f'''
     <a href="{url}" target="_self">
         <div style="
-            text-align: center;
             display: inline-block;
             padding: 0.5em 1em;
             color: #FFFFFF;
-            background-color: "#F63366";
-            border-radius: 6px;
+            background-color: {color};
+            border-radius: 3px;
             text-decoration: none;">
             {text}
         </div>
     </a>
     ''',
     unsafe_allow_html=True)
-# redirect_button("Go to Top models", "#top-models")
+
+# redirect_button("#top-models", "Go to Top models")
