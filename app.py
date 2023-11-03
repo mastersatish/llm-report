@@ -1055,15 +1055,15 @@ with vector_tab1:
         st.altair_chart(vector0_app_count, use_container_width=True)
 
     with line2:
-        st.markdown(f'''
+        st.markdown(f"""
             ### :orange[**{pct_vector_retrieval}%**] of all apps use vector magic
             
-            Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing large, unstructured datasets (including text, images, video, or audio). These tools are commonly used in search or recommendation engines.
+            Apps with **vector databases** and **vector search** are used to enable fast, contextual search by categorizing large, unstructured datasets (including text, images, video, or audio). 
+            
+            While this feature isn't widespread across apps yet, it's incredibly effective for enhancing search functions and making stronger contextual, and faster recommendations.
 
-            Apps using LLMs and orchestration tools alone meet :orange[**80%**] apps' needs.
-            - **Vector databases** (_e.g._ Pinecone or Chroma) use indexing and other techniques to speed up the retrieval process.
-            - **Vector search** tools (_e.g._ FAISS or Elasticsearch) transform unstructured datasets into numerical representations so the algorithm can retrieve contextual, similar data.
-            ''')
+            If an app requires additional information beyond its built-in capacity, it can fetch the necessary details from a large database using vectors. This process is called **Retrieval Augmented Generation** (RAG).
+            """)
 
 
 with vector_tab2:
