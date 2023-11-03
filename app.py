@@ -185,6 +185,7 @@ df_daily = load_data_daily()
 
 df_tool_popularity = df_usage_in_app(df)
 
+
 # Load chat data
 #@st.cache_data
 #def load_chat_elements():
@@ -1643,6 +1644,13 @@ colored_header(
     color_name="light-blue-70",
 )
 
+@st.cache_data
+def load_survey_data(persist="disk"):
+    survey_url = st.secrets["survey_url"]
+    survey_rows = run_query(f'SELECT * FROM "{survey_url}"')
+    return pd.DataFrame(survey_rows)
+df_survey = load_survey_data()
+
 st.write('***What is your biggest concern when building LLM apps?*** In June 2023, :orange[**980**] respondents from the Streamlit community answered:')
 
 # https://twitter.com/streamlit/status/1686816512324358144
@@ -1660,9 +1668,9 @@ with concerns_col[0]:
    add_vertical_space(1)
 
    @st.cache_data
-   def display_trust_chart():
-       st.altair_chart(make_donut(36, 'Trust', 'blue'), use_container_width=True)
-   display_trust_chart()
+   def display_trust_chart(input_value):
+       st.altair_chart(make_donut(input_value, 'Trust', 'blue'), use_container_width=True)
+   display_trust_chart(df_survey['Trust'])
    #st.altair_chart(make_donut_chart(36, 'Trust', 'blue'), use_container_width=True)
 
 with concerns_col[1]:
@@ -1675,9 +1683,9 @@ with concerns_col[1]:
    add_vertical_space(1)
 
    @st.cache_data
-   def display_privacy_chart():
-       st.altair_chart(make_donut(28, 'Privacy', 'green'), use_container_width=True)
-   display_privacy_chart()
+   def display_privacy_chart(input_value):
+       st.altair_chart(make_donut(input_value, 'Privacy', 'green'), use_container_width=True)
+   display_privacy_chart(df_survey['Privacy'])
    #st.altair_chart(make_donut_chart(28, 'Privacy', 'green'), use_container_width=True)
     
 with concerns_col[2]:
@@ -1690,9 +1698,9 @@ with concerns_col[2]:
    add_vertical_space(1)
 
    @st.cache_data
-   def display_cost_chart():
-       st.altair_chart(make_donut(19, 'Cost', 'orange'), use_container_width=True)
-   display_cost_chart()
+   def display_cost_chart(input_value):
+       st.altair_chart(make_donut(input_value, 'Cost', 'orange'), use_container_width=True)
+   display_cost_chart(df_survey['Cost'])
    #st.altair_chart(make_donut_chart(19, 'Cost', 'orange'), use_container_width=True)
    
 with concerns_col[3]:
@@ -1705,9 +1713,9 @@ with concerns_col[3]:
    add_vertical_space(1)
 
    @st.cache_data
-   def display_skills_chart():
-       st.altair_chart(make_donut(17, 'Skills', 'red'), use_container_width=True)
-   display_skills_chart()
+   def display_skills_chart(input_value):
+       st.altair_chart(make_donut(input_value, 'Skills', 'red'), use_container_width=True)
+   display_skills_chart(df_survey['Skills'])
    #st.altair_chart(make_donut_chart(17, 'Skills', 'red'), use_container_width=True)
    
 
