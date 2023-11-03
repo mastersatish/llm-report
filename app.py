@@ -337,7 +337,7 @@ takeaway_col = st.columns(4, gap="medium")
 # Apps using 1 LLM category accounted for more than half of apps at :orange[**{pct_use_1}%**]
 # while those using 2 and 3 LLM categories afforded percentage values of :orange[**{pct_use_2}%**] and :orange[**{pct_use_3}%**], respectively.
 
-def redirect_button(url: str, text: str= None, color="#FD504D"):
+def redirect_button(url: str, text: str= None, color="#F63366"):
     st.markdown(
     f'''
     <a href="{url}" target="_self">
@@ -346,7 +346,7 @@ def redirect_button(url: str, text: str= None, color="#FD504D"):
             padding: 0.5em 1em;
             color: #FFFFFF;
             background-color: {color};
-            border-radius: 3px;
+            border-radius: 4px;
             text-decoration: none;">
             {text}
         </div>
