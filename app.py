@@ -3,6 +3,7 @@ from datetime import datetime
 from css import load_css_styles, load_footer
 from streamlit_extras.add_vertical_space import add_vertical_space
 from streamlit_extras.colored_header import colored_header
+from streamlit_extras.switch_page_button import switch_page 
 from streamlit_extras.card import card
 import math
 import numpy as np
@@ -360,7 +361,9 @@ with takeaway_col[0]:
         OpenAI has become the standard for LLM apps due to its pioneering GPT research, high-quality outputs, steerability, and accessible API. Their first-mover debut of ChatGPT and large transformer-based models sparked the imagination of developers, and the world, at large.
     """, unsafe_allow_html=True)
     #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
-    st.link_button('Go to Top models', '#top-models', type='primary')
+    if st.button('Go to Top models', type='primary'):
+        switch_page('top-models')
+    
 
 with takeaway_col[1]:
 # langchain_app_number, langchain_pct
