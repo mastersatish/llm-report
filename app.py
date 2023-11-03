@@ -28,11 +28,10 @@ alt.themes.enable("dark")
 
 with st.sidebar:
     st.title(':gray[State of LLM Apps 2023]')
-    #with st.expander('About this app:'):
-    #    st.write(':gray[Explore the latest trends, tools, and use cases in LLM app development from apps hosted on Streamlit Community Cloud.]')
+    #st.write(':gray[Explore the latest trends, tools, and use cases in LLM app development from apps hosted on Streamlit Community Cloud.]')
     
     #<h3>What's in the report?</h3>
-    st.header("What's in the report?")
+    #st.header("What's in the report?")
     st.markdown('''
         <div class="sidebar">
           <a href="#key-takeaways" class="nav">💡 &nbsp; Key takeaways</a>
