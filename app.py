@@ -377,6 +377,7 @@ with takeaway_col[0]:
     """, unsafe_allow_html=True)
 
     redirect_button("#top-models", "Go to Top models")
+    st.button('Go to Top models', type='primary')
     #st.altair_chart(make_donut(pct_llm_models, 'LLM Models', 'blue'), use_container_width=True)
     #if st.button('Go to Top models', type='primary'):
     #    <a href="#top-models" target="_self">📊 &nbsp; Top models</a>
