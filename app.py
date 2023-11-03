@@ -342,6 +342,7 @@ def redirect_button(url: str, text: str= None, color="#F63366"):
     f'''
     <a href="{url}" target="_self">
         <div style="
+            text-align: center;
             display: inline-block;
             padding: 0.5em 1em;
             color: #FFFFFF;
